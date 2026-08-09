@@ -1,7 +1,6 @@
 // Todas las llamadas HTTP a la API REST del backend viven aqui,
 // para mantener los componentes libres de logica de red.
-
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000/api';
+const API_URL = 'https://helpdesk-frontend-m5s7.onrender.com/api';
 
 async function manejarRespuesta(res) {
   if (!res.ok) {
